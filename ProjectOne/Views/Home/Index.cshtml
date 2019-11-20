@@ -1,7 +1,34 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@{
+    /**/
+
+
+    ViewBag.Title = "Home Page";
 }
 
-<h2>Index</h2>
-
+<link href="~/Content/MissionStyles.css" rel="stylesheet" />
+<div id="imgBox">
+    <h1>Mission Site</h1>
+    <img id="homePic" src="~/Content/Images/missionary.jpg" />
+    <div class="whatever">
+        You Have Been Called To Serve...
+    </div>
+    <div class="whatever2">Learn about <b>your</b> mission below</div>
+    <div class="jumbotron bg-dark text-white">
+        <div>
+            <h1>Got Your Mission Call?</h1>
+            @Html.ActionLink("Find Your Mission", "Index", "Mission", new { @class = "myButton" })
+        </div>
+        <br /><br />
+        <div>
+            <h2>Who are we?</h2>
+            <p>We are a group of return missionaries who want to help those recently called to serve. Click here to go to our about page:</p>
+            @Html.ActionLink("About Us", "About", "Home", new { @class = "myButton" })
+        </div>
+        <br /><br />
+        <div>
+            <h2>Contact Us</h2>
+            <p>Feel free to contact us to learn more:</p>
+            @Html.ActionLink("Contact Us", "Index", "Contact", new { @class = "myButton" })
+        </div>
+    </div>
+</div>

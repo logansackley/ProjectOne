@@ -7,3 +7,136 @@
     height: 500px;
     Width: 200px;
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: black
+}
+
+#imgBox {
+    display: grid;
+    height: 100%;
+}
+
+#homePic {
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    left: 0px;
+    width: 100%;
+}
+
+.navbar-header {
+    left: 10px;
+}
+
+.jumbotron {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    left: 0px;
+    width: 100%;
+    background-color: black !important;
+    color: white !important;
+}
+
+.container {
+    position: inherit;
+    left: 20px;
+}
+
+.btn-primary {
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #3a8bd2;
+}
+
+.myButton {
+    padding: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: white;
+    color: black;
+    font-size: 150%;
+    border-radius: 10px;
+    left: 10%;
+    font-family: Arial;
+}
+
+    .myButton:hover {
+        padding: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        background-color: grey;
+        color: white;
+        font-size: 150%;
+        border-radius: 10px;
+        left: 10%;
+        font-family: Arial;
+        text-decoration: none;
+    }
+
+.whatever {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 520%;
+    font-family: Roboto, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow: 3px 2px 8px black;
+    animation-name: topFadeOut;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    width: 80%;
+}
+
+.whatever2 {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+    color: white;
+    animation-name: topFadeOut2;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    text-shadow: 3px 2px 8px black;
+}
+
+@keyframes topFadeOut {
+    0% {
+        position: absolute;
+        top: 50%;
+        opacity: 0;
+    }
+
+    100% {
+        position: absolute;
+        top: 40%;
+        opacity: 1;
+    }
+}
+
+@keyframes topFadeOut2 {
+    0% {
+        position: absolute;
+        top: 70%;
+        opacity: 0;
+    }
+
+    100% {
+        position: absolute;
+        top: 57%;
+        opacity: 1;
+    }
+}

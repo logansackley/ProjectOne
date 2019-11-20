@@ -139,6 +139,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\Canva_Mason.jpg" />
     <Content Include="Content\Images\Lazenbyyy.png" />
+    <Content Include="Content\Images\missionary.jpg" />
     <Content Include="Content\Images\Test.jpg" />
     <Content Include="Content\Images\Ty Todd.jpg" />
     <Content Include="Content\Mission.css" />
