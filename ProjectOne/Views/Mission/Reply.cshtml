@@ -1,18 +1,16 @@
 ﻿@model ProjectOne.Models.FAQ
 
 @{
-    ViewBag.Title = "Reply";
+    ViewBag.Title = "Help answer a quesiton";
 }
-
-<h2>Reply</h2>
+<h1>Share your experience</h1>
+<p><i>All answers will be reviewed before they are posted back to the FAQ</i></p>
 <link href="~/Content/MissionStyles.css" rel="stylesheet" />
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>FAQ</h4>
-        <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.Question, htmlAttributes: new { @class = "control-label col-md-2" })

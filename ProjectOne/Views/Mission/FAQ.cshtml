@@ -9,11 +9,11 @@
 <table>
     @foreach (var item in Model)
     {
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Question)
-        </th>
-    </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Question)
+            </th>
+        </tr>
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Question)
@@ -28,15 +28,22 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Answer)
                 <br />
-                @Html.ActionLink("Add a Reply", "Reply", new { sQuestion = item.Question }, new { @class = "btn btn-primary btn-large" })
+                @Html.ActionLink("Add a Reply", "Reply", new { sQuestion = item.Question }, new { @class = "listbutton" })
                 <br />
                 <br />
                 <br />
             </td>
         </tr>
-       
-       
+
+
     }
 
 </table>
+<form method="POST">
+    <label for="Question">Ask a question</label>
+    <br />
+    <input type="text" id="Question" placeholder="Ask us a question" />
+    <input type="submit" />
+</form>
+
 

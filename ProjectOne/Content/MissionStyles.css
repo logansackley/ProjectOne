@@ -140,3 +140,28 @@ html {
         opacity: 1;
     }
 }
+.listbutton {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    border-width: 4px;
+    border-color: black;
+    left: 10%;
+    font-family: Arial;
+}
+
+    .listbutton:hover {
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: grey;
+        color: white;
+        font-size: 100%;
+        border-radius: 10px;
+        left: 10%;
+        font-family: Arial;
+        text-decoration: none;
+    }

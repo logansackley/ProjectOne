@@ -31,8 +31,13 @@ namespace ProjectOne.Controllers
        
             return View();
         }
-
+        [HttpGet]
         public ActionResult FAQ()
+        {
+            return View(lstFAQ);
+        }
+        [HttpPost]
+        public ActionResult FAQ(string Question)
         {
             return View(lstFAQ);
         }
