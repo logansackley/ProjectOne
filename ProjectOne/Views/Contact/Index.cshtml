@@ -1,11 +1,11 @@
 ﻿@model ProjectOne.Models.Contact
 
 @{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Us";
 }
 
-<h2>Contact Us</h2>
 
+<link href="~/Content/MissionStyles.css" rel="stylesheet" />
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
@@ -41,7 +41,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.Subject, new SelectList(ViewBag.Subjects, "Subject"))
+                @Html.DropDownListFor(model => model.Subject, new SelectList(ViewBag.Subjects,  "Subject"))
                 
                 @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
             </div>
@@ -49,7 +49,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.message, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.message, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextAreaFor( model => model.message,new { style = "width: 400px; height: 200px;" })
                 @Html.ValidationMessageFor(model => model.message, "", new { @class = "text-danger" })
             </div>
         </div>

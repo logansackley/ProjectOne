@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectOne.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,12 +14,20 @@ namespace ProjectOne.Controllers
        
 
         // GET: Contact
+        [HttpGet]
         public ActionResult Index()
         {
             lstSubject.Add("More Missionary Information");
             lstSubject.Add("An error on the site");
             lstSubject.Add("I would like to add my mission");
             lstSubject.Add("Other");
+            ViewBag.Subjects = lstSubject;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Index(Contact myContact)
+        {
+            ModelState.Clear();
             ViewBag.Subjects = lstSubject;
             return View();
         }

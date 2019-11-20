@@ -14,11 +14,11 @@
             @Html.DisplayNameFor(model => model.Question)
         </th>
     </tr>
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Question)
-        </td>
-    </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Question)
+            </td>
+        </tr>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Answer)
@@ -27,10 +27,15 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Answer)
+                <br />
+                @Html.ActionLink("Add a Reply", "Reply", new { sQuestion = item.Question }, new { @class = "btn btn-primary btn-large" })
+                <br />
+                <br />
+                <br />
             </td>
-
         </tr>
-        <br />
+       
+       
     }
 
 </table>
