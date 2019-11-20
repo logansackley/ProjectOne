@@ -5,25 +5,26 @@
 }
 
 <h2>Mission</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.MissionID, new SelectList(ViewBag.Mission, "MissionID", "MissionName"))
+                @Html.ValidationMessageFor(model => model.MissionName, "", new { @class = "text-danger" })
+            </div>
+        </div>
 
-<div>
-    <div class="form-group">
-        <div class="col-md-10">
-          
-            @Html.DropDownList(Model=> Model.MissionID, new SelectList(ViewBag.Teams, 'MissionID', "MissionName"))
-            @Html.ValidationMessageFor(model => model.MissionName, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Show Mission" class="btn btn-default" />
+            </div>
         </div>
     </div>
 
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Show Mission" class="btn btn-default" />
-        </div>
+    <div>
+        @Html.ActionLink("Back to List", "Index")
     </div>
-</div>
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+}
 

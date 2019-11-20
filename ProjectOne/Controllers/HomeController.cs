@@ -24,12 +24,11 @@ namespace ProjectOne.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Mission(int myMission)
+        public ActionResult Mission(int MissionID)
         {
-            Mission oMission = MissionController.lstMission.Find(x => x.MissionID == myMission);
-            return RedirectToAction("Index", "Mission", oMission);
+            Mission oMission = MissionController.lstMission.Find(x => x.MissionID == MissionID);
+            return View("../Mission/Index", oMission);
         }
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

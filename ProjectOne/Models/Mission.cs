@@ -40,5 +40,11 @@ namespace ProjectOne.Models
         [Display(Name = "Dominant Religion")]
         public string DominantReligion { get; set; }
 
+        [Required]
+        [Display(Name ="Country Identifier")]
+        public string Picture { get; set; }
+
+
+
     }
 }

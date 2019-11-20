@@ -1,9 +1,9 @@
-﻿@model IEnumerable<ProjectOne.Models.Mission>
+﻿@model ProjectOne.Models.Mission
 
 @{
     ViewBag.Title = "Index";
 }
-
+<link href="~/Content/MissionStyles.css" rel="stylesheet" />
 <h2>Index</h2>
 
 <p>
@@ -11,6 +11,9 @@
 </p>
 <table class="table">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionName)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.PresidentName)
         </th>
@@ -26,8 +29,32 @@
         <th>
             @Html.DisplayNameFor(model => model.DominantReligion)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picture)
+        </th>
         <th></th>
     </tr>
-
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.MissionName)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.PresidentName)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.MissionAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Language)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Climate)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.DominantReligion)
+        </td>
+        <td>
+            <img src="@Url.Content(Model.Picture)" id="MissionPic" />
+        </td>
 
 </table>
