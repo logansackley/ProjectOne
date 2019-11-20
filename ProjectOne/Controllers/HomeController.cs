@@ -27,6 +27,7 @@ namespace ProjectOne.Controllers
         public ActionResult Mission(int MissionID)
         {
             Mission oMission = MissionController.lstMission.Find(x => x.MissionID == MissionID);
+
             return View("../Mission/Index", oMission);
         }
         public ActionResult Contact()
