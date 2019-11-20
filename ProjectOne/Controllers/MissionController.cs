@@ -36,5 +36,20 @@ namespace ProjectOne.Controllers
         {
             return View(lstFAQ);
         }
+        [HttpGet]
+        public ActionResult Reply(string sQuestion)
+        {
+            ViewBag.Question = sQuestion;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Reply(FAQ myFAQ)
+        {
+            
+            return View("FAQ", lstFAQ);
+        }
+
+
+
     }
 }
