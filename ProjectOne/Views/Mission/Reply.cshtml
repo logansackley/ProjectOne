@@ -15,12 +15,11 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.Question, htmlAttributes: new { @class = "control-label col-md-2"})
+            @Html.LabelFor(model => model.Question, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                    @Html.EditorFor(model => model.Question, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control", @Value = ViewBag.Question } })
-                    @Html.DisplayFor(model => model.Question, new { htmlAttributes = new { @Value = ViewBag.Question } })
-                </div>
+                @ViewBag.Question
             </div>
+        </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Answer, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -36,6 +35,7 @@
             </div>
         </div>
     </div>
+
 }
 
 <div>
