@@ -1,67 +1,52 @@
 ﻿@model ProjectOne.Models.Mission
-
 @{
     ViewBag.Title = "Find your Mission";
 }
 <link href="~/Content/MissionStyles.css" rel="stylesheet" />
-
-
-
+<h1 class="MissionTitle">@Html.DisplayFor(model => model.MissionName) Mission</h1>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.MissionName)
-        </th>
-        <th>
+        <th class="MissionCell">
             @Html.DisplayNameFor(model => model.PresidentName)
         </th>
-        <th>
+        <th class="MissionCell">
             @Html.DisplayNameFor(model => model.MissionAddress)
         </th>
-        <th>
+        <th class="MissionCell">
             @Html.DisplayNameFor(model => model.Language)
         </th>
-        <th>
+        <th class="MissionCell">
             @Html.DisplayNameFor(model => model.Climate)
         </th>
-        <th>
+        <th class="MissionCell">
             @Html.DisplayNameFor(model => model.DominantReligion)
         </th>
-        <th>
+        <th class="MissionCell">
             @Html.DisplayNameFor(model => model.Picture)
         </th>
         <th></th>
     </tr>
     <tr>
-        <td>
-            @Html.DisplayFor(model => model.MissionName)
-        </td>
-        <td>
+        <td class="Missionc">
             @Html.DisplayFor(model => model.PresidentName)
         </td>
-        <td>
+        <td class="Missionc">
             @Html.DisplayFor(model => model.MissionAddress)
         </td>
-        <td>
+        <td class="Missionc">
             @Html.DisplayFor(model => model.Language)
         </td>
-        <td>
+        <td class="Missionc">
             @Html.DisplayFor(model => model.Climate)
         </td>
-        <td>
+        <td class="Missionc">
             @Html.DisplayFor(model => model.DominantReligion)
         </td>
-        <td>
+        <td class="Missionc">
             <img src="@Url.Content(Model.Picture)" id="MissionPic" />
         </td>
-
 </table>
-<br /><br />
-<br /><br />
-<br /><br />
-<br /><br />
-<br /><br />
-<br /><br />
-<br /><br />
-<br /><br />
-@Html.ActionLink("Mission FAQ's", "FAQ", "Mission", null, new { @class = "listbutton" }) 
+<h4 class="SmallHead">
+    Check out the @Html.DisplayFor(model => model.MissionName)
+    @Html.ActionLink("Mission FAQ's", "FAQ", "Mission", null, new { @class = "listbutton" })
+</h4>

@@ -200,3 +200,25 @@ fieldset{
     animation-iteration-count: infinite;
     color: black;
 }
+.MissionCell {
+    background-color: #4b4b4b;
+    color: white;
+    font-size: 120%;
+    font-family: arial;
+}
+
+.Missionc {
+    font-size: 150%;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.MissionTitle {
+    font-weight: bold;
+}
+
+.SmallHead {
+    font-size: 150%;
+    font-family: arial;
+    font-weight: bold;
+}
