@@ -1,0 +1,45 @@
+﻿body {
+
+    min-height: 100vh;
+
+}
+
+.fickler-button {
+    background: black;
+    color: white;
+    outline: 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    border: 0;
+    border-radius: 100px;
+    font-size: 16px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.25);
+    letter-spacing: 3px;
+    transition: .25s;
+}
+
+.fickler-button:hover {
+    background: rgba(0,0,0,.5);
+}
+
+#fickler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 300px);
+}
+
+#fickler select {
+
+    padding: 10px 50px;
+    background: black;
+    color: white;
+    border-radius: 100px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.25);
+    font-size: 18px;
+    display: flex;
+    letter-spacing: 3px;
+
+}

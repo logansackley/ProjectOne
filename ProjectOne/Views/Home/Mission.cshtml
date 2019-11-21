@@ -5,29 +5,18 @@
 }
 
 <h2>Mission</h2>
-<link href="~/Content/MissionStyles.css" rel="stylesheet" />
-
+@*<link href="~/Content/MissionStyles.css" rel="stylesheet" />*@
+<link href="~/Content/finalMission.css" rel="stylesheet" />
 
 @using (Html.BeginForm())
 {
 <div>
+    <h4>Select your Mission</h4>
     <div class="form-group form-control-lg" type="text">
-        <div class="col-md-5">
+        <div class="col-md-5" id="fickler">
             @Html.DropDownListFor(model => model.MissionID, new SelectList(ViewBag.Mission, "MissionID", "MissionName"))
             @Html.ValidationMessageFor(model => model.MissionName, "", new { @class = "text-danger" })
-        </div>
-    </div>
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Show Mission" class="listbutton" />
+            <input type="submit" value="Show Mission" class="fickler-button" />
         </div>
     </div>
 </div>
