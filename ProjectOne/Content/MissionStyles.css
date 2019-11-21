@@ -191,3 +191,12 @@ html {
 fieldset{
     border: medium;
 }
+.first-text {
+    font-size: 4.4rem;
+    position: relative;
+    opacity: 0;
+    animation-name: topFadeOut;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+    color: black;
+}
