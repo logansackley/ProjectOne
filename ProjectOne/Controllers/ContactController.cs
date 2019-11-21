@@ -29,7 +29,7 @@ namespace ProjectOne.Controllers
         {
             ModelState.Clear();
             ViewBag.Subjects = lstSubject;
-            return View();
+            return View("../Home/Index");
         }
     }
 }
