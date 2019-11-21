@@ -52,58 +52,36 @@ html {
     left: 20px;
 }
 
-.btn-primary {
-    position: absolute;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    background-color: #3a8bd2;
-}
 
 .myButton {
-    padding: 15px;
-    background-color: white;
+    background: white;
     color: black;
-    font-size: 150%;
-    border-radius: 10px;
-    left: 25%;
-    right: 25% font-family: Arial;
+    outline: 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    border: 0;
+    border-radius: 100px;
+    font-size: 16px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.25);
+    letter-spacing: 3px;
+    transition: .25s;
 }
 
-    .myButton:hover {
-        padding: 20px;
-        background-color: grey;
-        color: white;
-        font-size: 150%;
-        border-radius: 10px;
-        left: 10%;
-        font-family: Arial;
-        text-decoration: none;
-    }
-
-.mission {
-    position: absolute;
-    text-align: center;
-    left: 25%;
-    right: 25%;
+.myButton:hover {
+    background: rgba(255,255,255,.5);
+    text-decoration: none;
+    color: black;
 }
 
-.aboutUs {
-    position: absolute;
+.mission, .aboutUs, .contactUs {
     text-align: center;
-    left: 25%;
-    right: 25%;
-    top: 130%;
-}
-
-.contactUs {
-    position: absolute;
-    text-align: center;
-    left: 25%;
-    right: 25%;
-    bottom: -190%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0; 
+    box-sizing: border-box;
 }
 
 .whatever {

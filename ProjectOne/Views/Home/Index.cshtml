@@ -15,20 +15,22 @@
     <div class="whatever2">Learn about <b>your</b> mission below</div>
     <div class="jumbotron bg-dark text-white">
         <div class="mission">
-            <h1>Got Your Mission Call?</h1>
+            <h2>Got Your Mission Call?</h2>
+            <br />
             @Html.ActionLink("Find Your Mission", "Mission", "Home", new { @class = "myButton" })
         </div>
-        <br /><br />
         <div class="aboutUs">
             <h2>Who are we?</h2>
             <p>We are a group of return missionaries who want to help those recently called to serve. Click here to go to our about page</p>
+            <br />
             @Html.ActionLink("About Us", "About", "Home", new { @class = "myButton" })
         </div>
-        <br /><br />
         <div class="contactUs">
             <h2>Contact Us</h2>
             <p>Feel free to contact us to learn more</p>
-            @Html.ActionLink("Contact Us", "Index", "Contact",null, new { @class = "myButton" })
+            <br />
+            @Html.ActionLink("Contact Us", "Index", "Contact", null, new { @class = "myButton" })
+            <br /><br /><br />
         </div>
     </div>
 </div>
