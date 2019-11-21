@@ -1,6 +1,8 @@
 ﻿.container {
     position: relative;
     width: 50%;
+    left: -5%;
+    text-align: center;
 }
 
 .image {
@@ -37,34 +39,35 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Arial;
+    margin: 0;
+    font-family: Arial;
 }
 
 .header {
-  text-align: center;
-  padding: 32px;
+    text-align: center;
+    padding: 32px;
 }
 
 /* Create two equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 50%;
-  padding: 10px;
+    float: left;
+    width: 50%;
+    padding: 10px;
 }
 
-.column img {
-  margin-top: 12px;
-}
+    .column img {
+        margin-top: 12px;
+    }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
